@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="50%" height="50%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="50" y="50" width="160%" height="180%"
+	style = "fill:#772227 ;stroke: #000000; stroke-width:1"/>
+	<text x="60" y="70" fill="#FFFFFF">
+	Rectangle
+	</text>
+</svg>

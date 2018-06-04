@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Computer Studies Course - Zhetpisbayeva Aliya</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="fluid-gallery.css">
+
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Computer Studies - course of RTU</h1>
+    <p class="page-description text-center">Zhetpisbayeva Aliya<br>31.05.2018</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+          <h1>Table of contents</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item disabled">Chapter 1 - </a>
+            <a href="#ref_1" class="list-group-item">SVG image creation with .svg file</a>
+
+            <a href="#" class="list-group-item disabled">Chapter 2 - </a>
+            <a href="#ref_2" class="list-group-item">Creating images using JavaScript and canvas</a>
+            <a href="#ref_5" class="list-group-item">Reference</a>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="container gallery-container">
+        <div class="tz-gallery">
+            <div class="row">
+
+                <div class="row"></div>
+                <div class="row">
+                    <h1>Chapter 1</h1>
+                    <h1>SVG image creation with .svg file</h1>
+                    <h2 id="ref_1">1.1 Rectangle</h2>
+          <p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+          <embed type="image/svg+xml" src="images/01.svg" width="600" height="450"/></p>
+                </div>
+
+                <div class="row">
+                    <h2 id="two_two">1.2 Line</h2>
+          <p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+                    <embed type="image/svg+xml" src="images/02.svg" width="600" height="450"/></p>
+                </div>
+                <div class="row">
+                    <h2 id="three_three">1.3 Polyline</h2>
+					<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+                    <embed type="image/svg+xml" src="images/03.svg" width="600" height="400"/></p>
+                </div>
+				<div class="row">
+                    <h2 id="four_four">1.4 Circle</h2>
+					<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+                    <embed type="image/svg+xml" src="images/04.svg" width="600" height="450"/></p>
+                </div>
+				<div class="row">
+
+                    <h2 id="five_five">1.5 Polygon</h2>
+					<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+                    <embed  type="image/svg+xml" src="images/05.svg" width="600" height="450"/></p>
+                </div>
+
+            </div>
+</div>
+</div>
+
+
+<div class="container gallery-container" style="margin-top: 50px">
+    <div class="tz-gallery section">
+      <div class="row"></div>
+      <div class="row">
+          <h1>Chapter 2</h1>
+          <h1>Creating images using JavaScript and canvas</h1>
+          <h2 id="ref_2">2.1 Drawing rectangle</h2>
+<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+            <canvas width=200 height=200 id="ccc"></canvas>
+  </p>
+<script>
+  window.onload=function() {
+  c = document.getElementById("ccc");
+  var ctx=c.getContext('2d');
+
+  //drawing code
+  ctx.fillStyle="red";
+  ctx.fillRect(0,0,160,180);
+  ctx.stroke();
+  }
+</script>
+          <h3 id="chap_one_one">2.2 Drawing Line</h3>
+<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+  <canvas id="myLine" width="300" height="150" style="border:1px solid #FFFF00;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+
+    var c = document.getElementById("myLine");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(300, 150);
+    ctx.stroke();
+
+  </script>
+</p>
+      </div>
+
+
+      <div class="row">
+
+          <h2 id="chap_one_two">2.3 Drawing Polyline</h2>
+          <p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+<canvas id="myPolyline" width="300" height="150" style="border:1px solid #FFFF00;">
+  Your browser does not support the HTML5 canvas tag.</canvas>
+
+  <script>
+
+  var c = document.getElementById("myPolyline");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(20, 20);
+  ctx.lineTo(20, 100);
+  ctx.lineTo(70, 100);
+  ctx.lineTo(90, 900);
+  ctx.stroke();
+
+  </script>
+          </p>
+      </div>
+      <div class="row">
+          <h2 id="chap_one_three">2.4 Drawing Circle</h2>
+          <p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+  <canvas id="myCanvas" width="200" height="100" style="border:4px solid #FFFF00;">
+  Your browser does not support the HTML5 canvas tag.</canvas>
+
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(95,50,40,0,2*Math.PI);
+
+  ctx.stroke();
+  </script>
+</p>
+      </div>
+
+<div class="row">
+          <h2 id="chap_two_two">2.5 Drawing Ellipse</h2>
+<p style="text-align:center; border:1px solid #d3d3d3; border-color:red;">
+          <canvas id="thecanvas" width="300" height="200" style="border:1px solid #FFFF00;"></canvas>
+
+  <script>
+    var canvas = document.getElementById('thecanvas');
+    if(canvas.getContext)
+    {
+    var ctx = canvas.getContext('2d');
+
+    drawEllipseWithEllipse(ctx, 150, 80, 100, 30, 'red');
+
+    }
+
+    //
+    function drawEllipseWithEllipse(ctx, cx, cy, rx, ry, style) {
+    if(ctx.ellipse)
+    {
+      ctx.save();
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI*2);
+      ctx.strokeStyle=style;
+      ctx.stroke();
+      ctx.restore();
+    }
+    }
+
+
+
+  </script>
+</p>
+
+      </div>
+    </div>
+</div>
+
+
+<div class="container gallery-container" style="margin-top: 50px">
+    <div class="tz-gallery section">
+        <div class="row"></div>
+        <div class="row">
+            <h2 id="ref_5">Reference</h2>
+            <ol>
+              <li> HTML5 Tutorial - <a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a>
+              <li> JavaScript Tutorial - <a href="https://www.w3schools.com/js/default.asp" target="_blank">https://www.w3schools.com/js/default.asp</a>
+              
+            </ol>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
